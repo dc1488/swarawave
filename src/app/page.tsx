@@ -9,7 +9,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32">
+      <section className="py-8 md:py-12">
         <div className="container px-4">
           <div className="flex justify-start mb-8">
             <img 
