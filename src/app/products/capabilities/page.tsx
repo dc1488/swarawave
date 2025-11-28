@@ -1,4 +1,5 @@
 import Navigation from "@/components/navigation"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Shield, Zap, Settings, Database } from "lucide-react"
@@ -57,9 +58,15 @@ export default function CapabilitiesPage() {
                     <span className="text-muted-foreground">Custom transaction rules and workflows</span>
                   </li>
                 </ul>
-                <Button className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                {/* 🔗 Link to transaction-control page */}
+                <Button
+                  asChild
+                  className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+                >
+                  <Link href="/products/capabilities/transaction-control">
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
                 </Button>
               </div>
               <div className="bg-gradient-to-br from-[#F7F9FC] to-white p-8 rounded-2xl shadow-lg">
@@ -121,9 +128,15 @@ export default function CapabilitiesPage() {
                     <span className="text-muted-foreground">Multi-layer authentication protocols</span>
                   </li>
                 </ul>
-                <Button className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white">
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                {/* 🔗 Link to fraud-control page */}
+                <Button
+                  asChild
+                  className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white"
+                >
+                  <Link href="/products/capabilities/fraud-control">
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -158,9 +171,15 @@ export default function CapabilitiesPage() {
                     <span className="text-muted-foreground">Real-time experience adaptation</span>
                   </li>
                 </ul>
-                <Button className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                {/* 🔗 Link to ux-control page */}
+                <Button
+                  asChild
+                  className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+                >
+                  <Link href="/products/capabilities/ux-control">
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
                 </Button>
               </div>
               <div className="bg-gradient-to-br from-[#F7F9FC] to-white p-8 rounded-2xl shadow-lg">
@@ -203,21 +222,21 @@ export default function CapabilitiesPage() {
                       <span className="text-sm font-bold text-[#4A5AFF]">2.3M</span>
                     </div>
                     <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#4A5AFF] rounded-full" style={{width: '75%'}}></div>
+                      <div className="h-full bg-[#4A5AFF] rounded-full" style={{ width: "75%" }}></div>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-muted-foreground">Activation Points</span>
                       <span className="text-sm font-bold text-[#8692FF]">847K</span>
                     </div>
                     <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#8692FF] rounded-full" style={{width: '60%'}}></div>
+                      <div className="h-full bg-[#8692FF] rounded-full" style={{ width: "60%" }}></div>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-muted-foreground">Conversion Rate</span>
                       <span className="text-sm font-bold text-[#4A5AFF]">34%</span>
                     </div>
                     <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#4A5AFF] rounded-full" style={{width: '34%'}}></div>
+                      <div className="h-full bg-[#4A5AFF] rounded-full" style={{ width: "34%" }}></div>
                     </div>
                   </div>
                 </div>
@@ -250,9 +269,15 @@ export default function CapabilitiesPage() {
                     <span className="text-muted-foreground">Custom reporting and dashboards</span>
                   </li>
                 </ul>
-                <Button className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white">
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                {/* 🔗 Link to data-control page */}
+                <Button
+                  asChild
+                  className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white"
+                >
+                  <Link href="/products/capabilities/data-control">
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -267,14 +292,30 @@ export default function CapabilitiesPage() {
             Explore All SDK Capabilities
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Discover how SwaraWave's comprehensive SDK capabilities can transform your proximity experiences and drive business value.
+            Discover how SwaraWave&apos;s comprehensive SDK capabilities can transform your proximity experiences and drive business value.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-              Request a Demo
+            {/* Request a Demo → contact */}
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+            >
+              <Link href="/contact">
+                Request a Demo
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white">
-              View Technical Documentation
+
+            {/* View Technical Documentation → SDK page or docs */}
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white"
+            >
+              <Link href="/products/sdk">
+                View Technical Documentation
+              </Link>
             </Button>
           </div>
         </div>
@@ -305,8 +346,8 @@ export default function CapabilitiesPage() {
               <h4 className="font-semibold mb-4">Solutions</h4>
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>Finance</li>
-                <li>Retail & FMCG</li>
-                <li>Mobility & Transport</li>
+                <li>Retail &amp; FMCG</li>
+                <li>Mobility &amp; Transport</li>
               </ul>
             </div>
             <div>
