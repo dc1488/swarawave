@@ -1,7 +1,10 @@
+"use client"
+
 import Navigation from "@/components/navigation"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Shield, Smartphone, Zap, Settings, Code, Database } from "lucide-react"
+import { Shield, Smartphone, Zap, Settings, Code, Database } from "lucide-react"
 
 export default function SDKPage() {
   return (
@@ -11,13 +14,38 @@ export default function SDKPage() {
       {/* Hero Section */}
       <section className="py-20">
         <div className="container px-4">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#0D1C3F] mb-8">
-              SwaraWave Ultrasonic SDK
-            </h1>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              The SwaraWave Ultrasonic SDK provides encrypted ultrasonic communication enabling proximity, identity, and event-driven interactions between devices — without additional hardware or constant connectivity.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Hero Copy */}
+            <div className="max-w-xl">
+              <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#4A5AFF] mb-4">
+                SwaraWave Ultrasonic SDK
+              </p>
+              <h1 className="text-4xl md:text-6xl font-bold text-[#0D1C3F] mb-6 leading-tight">
+                The Ultrasonic Standard for Secure, Seamless Proximity Experiences
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4">
+                SwaraWave Ultrasonic SDK turns speakers and microphones into a secure proximity layer —
+                enabling verification, transactions, and engagement using encrypted audio signals across
+                any device with a speaker or microphone.
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Trusted by enterprises powering the future of proximity intelligence.
+              </p>
+            </div>
+
+            {/* Hero Image */}
+            <div className="relative">
+              {/* Soft gradient glow */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#4A5AFF]/40 via-[#8692FF]/30 to-transparent rounded-3xl blur-3xl opacity-80" />
+
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/30 bg-white/40 backdrop-blur">
+                <img
+                  src="/sdk-hero-swarawave.jpg" // put your landscape image file here
+                  alt="Visualization of SwaraWave Ultrasonic SDK in real-world environments"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -34,9 +62,10 @@ export default function SDKPage() {
                 <div className="w-12 h-12 bg-[#4A5AFF] rounded-full flex items-center justify-center mb-4">
                   <Shield className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Ultrasonic Presence Detection</h3>
+                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Encrypted Ultrasonic Signaling</h3>
                 <p className="text-muted-foreground">
-                  Detect when devices are in proximity using encrypted sound waves that work across any device with speakers or microphones.
+                  Use AES-grade encryption and access controls to keep proximity data authenticated, tamper-resistant,
+                  and secure by design.
                 </p>
               </CardContent>
             </Card>
@@ -46,9 +75,10 @@ export default function SDKPage() {
                 <div className="w-12 h-12 bg-[#4A5AFF] rounded-full flex items-center justify-center mb-4">
                   <Smartphone className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Identity & Device Verification</h3>
+                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Universal Device Compatibility</h3>
                 <p className="text-muted-foreground">
-                  Authenticate users and verify device identity through secure ultrasonic token exchange without pairing or hardware requirements.
+                  Run on any device with a speaker or microphone — from mobile and POS to kiosks, IoT, and embedded systems,
+                  without extra hardware.
                 </p>
               </CardContent>
             </Card>
@@ -58,9 +88,10 @@ export default function SDKPage() {
                 <div className="w-12 h-12 bg-[#4A5AFF] rounded-full flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Offline-Ready Communication</h3>
+                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Offline & Network-Independent</h3>
                 <p className="text-muted-foreground">
-                  Enable proximity interactions without network connectivity, perfect for environments with poor or no internet access.
+                  Enable proximity interactions without WiFi, mobile data, NFC, Bluetooth pairing, or QR codes —
+                  ideal for low-connectivity environments.
                 </p>
               </CardContent>
             </Card>
@@ -70,9 +101,10 @@ export default function SDKPage() {
                 <div className="w-12 h-12 bg-[#4A5AFF] rounded-full flex items-center justify-center mb-4">
                   <Settings className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Stable Performance in Noisy Environments</h3>
+                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Stable in Noisy Environments</h3>
                 <p className="text-muted-foreground">
-                  Advanced signal processing ensures reliable operation even in challenging acoustic environments with background noise.
+                  Optimized signal profiles for retail, transit hubs, and busy public spaces ensure consistent performance
+                  even with background noise.
                 </p>
               </CardContent>
             </Card>
@@ -82,9 +114,10 @@ export default function SDKPage() {
                 <div className="w-12 h-12 bg-[#4A5AFF] rounded-full flex items-center justify-center mb-4">
                   <Code className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Cross-Platform Support</h3>
+                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Developer-Friendly Integration</h3>
                 <p className="text-muted-foreground">
-                  Deploy on iOS, Android, Web, and POS systems with native SDKs and consistent APIs across all platforms.
+                  Lightweight, modular SDK with clear APIs and event callbacks for tone start, success, failure, and
+                  presence — easy to plug into existing flows.
                 </p>
               </CardContent>
             </Card>
@@ -94,9 +127,10 @@ export default function SDKPage() {
                 <div className="w-12 h-12 bg-[#4A5AFF] rounded-full flex items-center justify-center mb-4">
                   <Database className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Lightweight Integration Footprint</h3>
+                <h3 className="text-xl font-bold text-[#0D1C3F] mb-3">Scalable Across Environments</h3>
                 <p className="text-muted-foreground">
-                  Minimal impact on app size and performance with optimized libraries and efficient resource utilization.
+                  Designed for high-volume interactions in finance, retail, mobility, and connected-device ecosystems,
+                  with analytics-ready event data.
                 </p>
               </CardContent>
             </Card>
@@ -109,58 +143,46 @@ export default function SDKPage() {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0D1C3F] text-center mb-12">
-              For Developers
+              For Developers & Product Teams
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">Clear APIs and SDK Docs</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Comprehensive documentation with code examples, integration guides, and best practices for quick implementation.
+                  <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">Clear APIs & Documentation</h3>
+                  <p className="text-muted-foreground">
+                    Integrate quickly with well-structured SDKs, implementation guides, and sample flows covering
+                    common identity, payment, and engagement scenarios.
                   </p>
-                  <Button variant="outline" className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white">
-                    View Documentation
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">Modular Implementation</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Implement only the features you need with modular SDK architecture that allows selective feature integration.
+                  <p className="text-muted-foreground">
+                    Choose only what you need: transmitter, receiver, or full transceiver roles, with flexible tone
+                    profiles for your environment and UX.
                   </p>
-                  <Button variant="outline" className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white">
-                    Explore SDK Modules
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">Test & Sandbox Environments</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Develop and test with full sandbox support, simulation tools, and comprehensive testing frameworks.
+                  <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">Sandbox & Testing Support</h3>
+                  <p className="text-muted-foreground">
+                    Experiment in controlled environments, simulate signals, and validate proximity flows before
+                    rolling out to production devices.
                   </p>
-                  <Button variant="outline" className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white">
-                    Access Sandbox
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">Developer Support</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Get help from our engineering team with dedicated support, code reviews, and integration assistance.
+                  <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">Enterprise-Grade Support</h3>
+                  <p className="text-muted-foreground">
+                    SwaraWave provides dedicated technical support, architecture guidance, and best practices for
+                    high-volume deployments.
                   </p>
-                  <Button variant="outline" className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white">
-                    Contact Support
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
                 </CardContent>
               </Card>
             </div>
@@ -171,20 +193,24 @@ export default function SDKPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-[#4A5AFF] to-[#8692FF]">
         <div className="container px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-            Start Building with SwaraWave SDK
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Build Secure, Contactless Experiences With Sound
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Get access to the SDK, documentation, and developer resources to integrate ultrasonic proximity intelligence into your applications.
+          <p className="text-lg md:text-xl text-white/90 mb-10 max-w-3xl mx-auto">
+            Let&apos;s unlock the future of proximity intelligence for your business with SwaraWave Ultrasonic SDK —
+            from identity validation and offline transactions to contextual engagement across every touchpoint.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#4A5AFF] hover:bg-gray-100">
-              Get SDK Access
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#4A5AFF]">
-              View API Reference
-            </Button>
-          </div>
+
+          {/* ✅ Only button on page: Request a Demo → /contact */}
+          <Button
+            asChild
+            size="lg"
+            className="bg-white text-[#4A5AFF] hover:bg-gray-100"
+          >
+            <Link href="/contact">
+              Request a Demo
+            </Link>
+          </Button>
         </div>
       </section>
 

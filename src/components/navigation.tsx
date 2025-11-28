@@ -313,8 +313,12 @@ export default function Navigation() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Button className="hidden md:inline-flex bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-            Request a Demo
+          {/* Desktop CTA: Request a Demo → /contact */}
+          <Button
+            asChild
+            className="hidden md:inline-flex bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+          >
+            <Link href="/contact">Request a Demo</Link>
           </Button>
 
           {/* Mobile Navigation */}
@@ -471,8 +475,13 @@ export default function Navigation() {
                 >
                   Contact
                 </Link>
-                <Button className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white mt-2">
-                  Request a Demo
+
+                {/* Mobile CTA: Request a Demo → /contact */}
+                <Button
+                  asChild
+                  className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white mt-2"
+                >
+                  <Link href="/contact">Request a Demo</Link>
                 </Button>
               </div>
             </SheetContent>

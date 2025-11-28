@@ -198,8 +198,8 @@ export default function ContactPage() {
                           <p className="text-muted-foreground mb-2">
                             For general inquiries and partnership opportunities
                           </p>
-                          <a href="mailto:hello@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF] font-medium">
-                            hello@swarawave.com
+                          <a href="mailto:partnership@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF] font-medium">
+                            partnership@swarawave.com
                           </a>
                         </div>
                       </div>
@@ -217,8 +217,8 @@ export default function ContactPage() {
                           <p className="text-muted-foreground mb-2">
                             Monday - Friday, 9:00 AM - 6:00 PM PST
                           </p>
-                          <a href="tel:+1-555-0123" className="text-[#8692FF] hover:text-[#4A5AFF] font-medium">
-                            +1 (555) 0123-4567
+                          <a href="https://wa.me/6281190000858" className="text-[#8692FF] hover:text-[#4A5AFF] font-medium">
+                            +62 (811) 90000858
                           </a>
                         </div>
                       </div>
@@ -235,9 +235,10 @@ export default function ContactPage() {
                           <h3 className="text-lg font-semibold text-[#0D1C3F] mb-2">Office</h3>
                           <p className="text-muted-foreground">
                             SwaraWave Headquarters<br />
-                            123 Tech Street<br />
-                            San Francisco, CA 94105<br />
-                            United States
+                            Mangkuluhur City, 7th floor<br />
+                            Jl Jendral Gatot Subroto Kav. 1-3<br />
+                            Karet Semanggi, Jakarta 12930<br />
+                            Indonesia
                           </p>
                         </div>
                       </div>
@@ -274,26 +275,26 @@ export default function ContactPage() {
                   <CardContent className="p-6">
                     <div className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-[#0D1C3F] mb-1">North America</h4>
+                        <h4 className="font-semibold text-[#0D1C3F] mb-1">Jakarta</h4>
                         <p className="text-sm text-muted-foreground">
-                          <a href="mailto:na-sales@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF]">
-                            na-sales@swarawave.com
+                          <a href="mailto:partnership@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF]">
+                            partnership@swarawave.com
                           </a>
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#0D1C3F] mb-1">Europe</h4>
+                        <h4 className="font-semibold text-[#0D1C3F] mb-1">Jakarta</h4>
                         <p className="text-sm text-muted-foreground">
-                          <a href="mailto:eu-sales@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF]">
-                            eu-sales@swarawave.com
+                          <a href="mailto:partnership@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF]">
+                            partnership@swarawave.com
                           </a>
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-[#0D1C3F] mb-1">Asia-Pacific</h4>
+                        <h4 className="font-semibold text-[#0D1C3F] mb-1">Jakarta</h4>
                         <p className="text-sm text-muted-foreground">
-                          <a href="mailto:apac-sales@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF]">
-                            apac-sales@swarawave.com
+                          <a href="mailto:partnership@swarawave.com" className="text-[#4A5AFF] hover:text-[#8692FF]">
+                            partnership@swarawave.com
                           </a>
                         </p>
                       </div>
