@@ -36,13 +36,13 @@ export default function TeamPage() {
                     <span className="text-3xl font-bold text-white">JD</span>
                   </div>
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-2">
-                    Jennifer Davis
+                    Martin Suharlie
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Chief Executive Officer
                   </p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Former VP of Engineering at TechCorp with 15+ years experience in audio technology and enterprise software. Jennifer leads SwaraWave's vision and strategic direction.
+                    President Director of (IDX: MCAS), the leading digital infrastructure company in Indonesia
                   </p>
                   <div className="flex flex-wrap gap-2 justify-center">
                     <span className="inline-flex items-center px-3 py-1 bg-[#F7F9FC] rounded-full text-xs text-[#4A5AFF]">
@@ -61,13 +61,13 @@ export default function TeamPage() {
                     <span className="text-3xl font-bold text-white">MK</span>
                   </div>
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-2">
-                    Michael Chen
+                    Raymond Loho
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Chief Technology Officer
                   </p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Pioneer in ultrasonic signal processing with 20+ patents in proximity technology. Michael leads SwaraWave's technical innovation and product development.
+                    President Director of (IDX: DIVA) Pioneer in ultrasonic signal processing in proximity technology. Raymond leads SwaraWave's technical innovation and product development.
                   </p>
                   <div className="flex flex-wrap gap-2 justify-center">
                     <span className="inline-flex items-center px-3 py-1 bg-[#F7F9FC] rounded-full text-xs text-[#4A5AFF]">
@@ -86,13 +86,13 @@ export default function TeamPage() {
                     <span className="text-3xl font-bold text-white">SR</span>
                   </div>
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-2">
-                    Sarah Rodriguez
+                    Abraham Theofilus
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Chief Operating Officer
                   </p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Former operations executive at GlobalTech with expertise in scaling enterprise software companies. Sarah ensures SwaraWave's operational excellence and customer success.
+                    President Director at (IDX: NFCX) with expertise in scaling retailcompanies. Abraham ensures SwaraWave's operational excellence and customer success.
                   </p>
                   <div className="flex flex-wrap gap-2 justify-center">
                     <span className="inline-flex items-center px-3 py-1 bg-[#F7F9FC] rounded-full text-xs text-[#4A5AFF]">

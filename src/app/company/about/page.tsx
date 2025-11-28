@@ -75,7 +75,7 @@ export default function AboutPage() {
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-4">The Beginning</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    SwaraWave was founded in 2020 by a team of audio engineers, security experts, and retail technologists who recognized a fundamental gap in how digital and physical worlds connect. Traditional proximity technologies like Bluetooth, NFC, and QR codes required specialized hardware, had security limitations, or couldn't work offline.
+                    SwaraWave was founded in 2025 by a team of IT engineers, security experts, and retail technologists who recognized a fundamental gap in how digital and physical worlds connect. Traditional proximity technologies like Bluetooth, NFC, and QR codes required specialized hardware, had security limitations, or couldn't work offline.
                   </p>
                 </CardContent>
               </Card>
