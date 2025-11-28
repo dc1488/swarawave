@@ -28,6 +28,7 @@ export default function BlogPage() {
         <div className="container px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Post 1 */}
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-2 mb-4">
@@ -46,13 +47,24 @@ export default function BlogPage() {
                     <User className="w-4 h-4 mr-2" />
                     <span>Sarah Chen, CTO</span>
                   </div>
-                  <Button className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-                    Read More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button
+                    asChild
+                    className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+                  >
+                    {/* 🔗 Replace with your blog post URL on the free platform */}
+                    <Link
+                      href="https://your-free-blog-platform.com/posts/offline-ready-identity"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Read More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
 
+              {/* Post 2 */}
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-2 mb-4">
@@ -71,13 +83,24 @@ export default function BlogPage() {
                     <User className="w-4 h-4 mr-2" />
                     <span>Michael Roberts, Lead Engineer</span>
                   </div>
-                  <Button className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white">
-                    Read More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button
+                    asChild
+                    className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white"
+                  >
+                    {/* 🔗 Replace with your blog post URL */}
+                    <Link
+                      href="https://your-free-blog-platform.com/posts/ultrasonic-vs-qr-nfc-bluetooth"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Read More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
 
+              {/* Post 3 */}
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-2 mb-4">
@@ -96,13 +119,24 @@ export default function BlogPage() {
                     <User className="w-4 h-4 mr-2" />
                     <span>Emily Watson, UX Director</span>
                   </div>
-                  <Button className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-                    Read More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button
+                    asChild
+                    className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+                  >
+                    {/* 🔗 Replace with your blog post URL */}
+                    <Link
+                      href="https://your-free-blog-platform.com/posts/proximity-first-experiences"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Read More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
 
+              {/* Post 4 */}
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-2 mb-4">
@@ -115,19 +149,30 @@ export default function BlogPage() {
                     Security First: Building Trust in Proximity Technology
                   </h3>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    How SwaraWave's encryption-first approach and multi-layer security protocols ensure trust and reliability in proximity-based transactions and authentication.
+                    How SwaraWave&apos;s encryption-first approach and multi-layer security protocols ensure trust and reliability in proximity-based transactions and authentication.
                   </p>
                   <div className="flex items-center text-sm text-muted-foreground mb-4">
                     <User className="w-4 h-4 mr-2" />
                     <span>David Kim, Security Lead</span>
                   </div>
-                  <Button className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white">
-                    Read More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button
+                    asChild
+                    className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white"
+                  >
+                    {/* 🔗 Replace with your blog post URL */}
+                    <Link
+                      href="https://your-free-blog-platform.com/posts/security-in-proximity-tech"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Read More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
 
+              {/* Post 5 */}
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-2 mb-4">
@@ -140,19 +185,30 @@ export default function BlogPage() {
                     Case Study: Transforming Retail with Sound-Based Engagement
                   </h3>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    How a leading retail chain implemented SwaraWave's ultrasonic technology to increase customer engagement and loyalty program participation by 45%.
+                    How a leading retail chain implemented SwaraWave&apos;s ultrasonic technology to increase customer engagement and loyalty program participation by 45%.
                   </p>
                   <div className="flex items-center text-sm text-muted-foreground mb-4">
                     <User className="w-4 h-4 mr-2" />
                     <span>Lisa Park, Solutions Architect</span>
                   </div>
-                  <Button className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-                    Read More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button
+                    asChild
+                    className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+                  >
+                    {/* 🔗 Replace with your blog post URL */}
+                    <Link
+                      href="https://your-free-blog-platform.com/posts/retail-sound-engagement-case-study"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Read More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
 
+              {/* Post 6 */}
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-2 mb-4">
@@ -171,9 +227,19 @@ export default function BlogPage() {
                     <User className="w-4 h-4 mr-2" />
                     <span>Dr. James Wilson, Urban Tech Strategist</span>
                   </div>
-                  <Button className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white">
-                    Read More
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button
+                    asChild
+                    className="bg-[#8692FF] hover:bg-[#4A5AFF] text-white"
+                  >
+                    {/* 🔗 Replace with your blog post URL */}
+                    <Link
+                      href="https://your-free-blog-platform.com/posts/proximity-intelligence-smart-cities"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Read More
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -192,11 +258,35 @@ export default function BlogPage() {
             Get the latest articles, case studies, and expert analysis on ultrasonic proximity technology and its applications across industries.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white">
-              Subscribe to Newsletter
+            {/* Subscribe → your newsletter / blog home */}
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#4A5AFF] hover:bg-[#8692FF] text-white"
+            >
+              <Link
+                href="https://your-free-blog-platform.com" // e.g. Medium publication or Substack
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Subscribe to Newsletter
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white">
-              RSS Feed
+
+            {/* RSS → RSS feed link from the free platform */}
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-[#4A5AFF] text-[#4A5AFF] hover:bg-[#4A5AFF] hover:text-white"
+            >
+              <Link
+                href="https://your-free-blog-platform.com/rss" // replace with actual RSS URL
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RSS Feed
+              </Link>
             </Button>
           </div>
         </div>
@@ -209,10 +299,10 @@ export default function BlogPage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img 
-                      src="/logo-swarawave.png" 
-                      alt="SwaraWave Logo" 
-                      className="h-8 w-auto"
-                    />
+                  src="/logo-swarawave.png" 
+                  alt="SwaraWave Logo" 
+                  className="h-8 w-auto"
+                />
                 <span className="text-xl font-bold">SwaraWave</span>
               </div>
               <p className="text-sm text-gray-300">
@@ -231,8 +321,8 @@ export default function BlogPage() {
               <h4 className="font-semibold mb-4">Solutions</h4>
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>Finance</li>
-                <li>Retail & FMCG</li>
-                <li>Mobility & Transport</li>
+                <li>Retail &amp; FMCG</li>
+                <li>Mobility &amp; Transport</li>
               </ul>
             </div>
             <div>
