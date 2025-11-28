@@ -33,7 +33,7 @@ export default function TeamPage() {
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-24 h-24 bg-gradient-to-br from-[#4A5AFF] to-[#8692FF] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl font-bold text-white">JD</span>
+                    <span className="text-3xl font-bold text-white">MS</span>
                   </div>
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-2">
                     Martin Suharlie
@@ -58,7 +58,7 @@ export default function TeamPage() {
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-24 h-24 bg-gradient-to-br from-[#8692FF] to-[#4A5AFF] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl font-bold text-white">MK</span>
+                    <span className="text-3xl font-bold text-white">RL</span>
                   </div>
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-2">
                     Raymond Loho
@@ -83,7 +83,7 @@ export default function TeamPage() {
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-24 h-24 bg-gradient-to-br from-[#4A5AFF] to-[#8692FF] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-3xl font-bold text-white">SR</span>
+                    <span className="text-3xl font-bold text-white">AT</span>
                   </div>
                   <h3 className="text-xl font-bold text-[#0D1C3F] mb-2">
                     Abraham Theofilus

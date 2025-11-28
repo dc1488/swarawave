@@ -57,28 +57,19 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Hero Animation */}
+          {/* Hero Image */}
             <div className="relative animate-slide-in-right">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#4A5AFF] to-[#8692FF] opacity-20 rounded-full blur-3xl animate-pulse-slow"></div>
-              <div className="relative bg-gradient-to-br from-[#F7F9FC] to-white p-8 rounded-2xl shadow-xl animate-float">
-                <div className="space-y-4">
-                  <div className="flex justify-center space-x-2">
-                    <div className="h-2 w-2 bg-[#4A5AFF] rounded-full animate-pulse"></div>
-                    <div className="h-2 w-2 bg-[#8692FF] rounded-full animate-pulse delay-75"></div>
-                    <div className="h-2 w-2 bg-[#4A5AFF] rounded-full animate-pulse delay-150"></div>
-                  </div>
-                  <div className="h-32 bg-gradient-to-r from-[#4A5AFF]/20 to-[#8692FF]/20 rounded-lg flex items-center justify-center">
-                    <div className="text-2xl font-bold text-[#0D1C3F]">Sound Waves</div>
-                  </div>
-                  <div className="flex justify-center space-x-2">
-                    <div className="h-2 w-2 bg-[#8692FF] rounded-full animate-pulse"></div>
-                    <div className="h-2 w-2 bg-[#4A5AFF] rounded-full animate-pulse delay-75"></div>
-                    <div className="h-2 w-2 bg-[#8692FF] rounded-full animate-pulse delay-150"></div>
-                  </div>
-                </div>
+              {/* Soft gradient glow behind the image */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#4A5AFF]/30 to-[#8692FF]/30 rounded-3xl blur-3xl opacity-70" />
+
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/40 bg-white/40 backdrop-blur">
+                <img
+                  src="/hero-swarawave.jpg"   // put your landscape image here
+                  alt="SwaraWave proximity intelligence in action"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
-
           </div>
         </div>
       </section>
